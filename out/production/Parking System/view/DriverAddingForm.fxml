@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addingFormContext" prefHeight="1030.0" prefWidth="1922.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverAddingFormController">
+   <children>
+      <AnchorPane prefHeight="1030.0" prefWidth="1922.0" style="-fx-background-color: transparent;">
+         <children>
+            <AnchorPane layoutX="628.0" layoutY="269.0" opacity="0.82" prefHeight="611.0" prefWidth="981.0" style="-fx-background-color: #22282D; -fx-background-radius: 20;" />
+            <AnchorPane layoutX="643.0" layoutY="254.0" prefHeight="611.0" prefWidth="981.0" style="-fx-background-color: #22282D; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="119.0" layoutY="43.0" prefHeight="50.0" prefWidth="213.0" text="Add Driver" textFill="WHITE">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="319.0" layoutY="67.0" prefHeight="4.0" prefWidth="526.0" style="-fx-background-color: #242B36;" />
+                  <Label layoutX="50.0" layoutY="162.0" prefHeight="39.0" prefWidth="180.0" text="Driver Name" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtDriverName" layoutX="239.0" layoutY="162.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label layoutX="547.0" layoutY="162.0" prefHeight="39.0" prefWidth="180.0" text="NIC" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="262.0" prefHeight="39.0" prefWidth="180.0" text="Drivers License" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtDriversLicense" layoutX="239.0" layoutY="262.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label layoutX="547.0" layoutY="262.0" prefHeight="39.0" prefWidth="180.0" text="Address" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddress" layoutX="664.0" layoutY="262.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </JFXTextField>
+                  <JFXButton buttonType="RAISED" layoutX="528.0" layoutY="517.0" onAction="#backToDashboard" prefHeight="45.0" prefWidth="180.0" ripplerFill="#242b36" style="-fx-background-color: #F6C61C; -fx-background-radius: 30; -fx-border-color: #F6C61C; -fx-border-radius: 35; -fx-border-width: 3;" text="Cancel">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="748.0" layoutY="517.0" onAction="#addDriver" prefHeight="45.0" prefWidth="180.0" ripplerFill="#242b36" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-border-color: #F6C61C; -fx-border-radius: 35; -fx-border-width: 3;" text="Add" textFill="#f6c61c">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="txtNIC" layoutX="664.0" layoutY="162.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label layoutX="50.0" layoutY="362.0" prefHeight="39.0" prefWidth="180.0" text="Contact" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtContact" layoutX="239.0" layoutY="362.0" prefHeight="39.0" prefWidth="255.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </JFXTextField>
+                  <Label fx:id="lblError" alignment="CENTER" layoutX="115.0" layoutY="447.0" prefHeight="32.0" prefWidth="751.0" textFill="RED">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

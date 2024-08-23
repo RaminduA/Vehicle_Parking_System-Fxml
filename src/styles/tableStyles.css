@@ -1,0 +1,26 @@
+.table-view{
+    -fx-background-color: #A4A4A4;
+    -fx-text-fill: white;
+}
+
+.table-view.column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-view.column-header, .table-view.filler{
+    -fx-background-color: grey;
+}
+
+.table-view.column-header.label{
+    -fx-fill: white;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #A4A4A4;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:even{
+    -fx-background-color: #FBDA01;
+    -fx-text-fill: white;
+}

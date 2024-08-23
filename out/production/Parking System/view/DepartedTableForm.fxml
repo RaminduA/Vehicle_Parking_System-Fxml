@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="674.0" prefWidth="1192.0" style="-fx-background-color: transparent;" stylesheets="@../styles/tableStyles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DepartedTableFormController">
+   <children>
+      <TableView fx:id="tblDepartedVehicles" prefHeight="674.0" prefWidth="1192.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="298.0" resizable="false" style="-fx-font-size: 25;" text="Vehicle Number" />
+            <TableColumn fx:id="colVehicleType" prefWidth="298.0" resizable="false" style="-fx-font-size: 25;" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="298.0" resizable="false" style="-fx-font-size: 25;" text="Driver Name" />
+            <TableColumn fx:id="colDepartedTime" prefWidth="296.0" resizable="false" style="-fx-font-size: 25;" text="Departed Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
